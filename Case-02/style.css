@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0c3ab4; 
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ring {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    border: 8px solid #ffffff;
+    border-top: 8px solid #ff2d55;
+    border-radius: 50%;
+}
+
+
+.container:hover .ring {
+    animation: spin 1.6s ease-in-out 1 forwards;
+}
+
+.circle {
+    width: 170px;
+    height: 170px;
+    background-color: #6b6b6b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

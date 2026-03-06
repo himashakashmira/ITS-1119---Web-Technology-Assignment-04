@@ -1,0 +1,32 @@
+/* රෝද වල පොදු සැකසුම */
+.wheel {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    bottom: -15px;
+    /* රෝද නොකඩවා කරකැවීම */
+    animation: wheel-rotate 0.6s linear infinite;
+}
+
+/* පිටුපස සහ ඉදිරිපස රෝද වල පිහිටීම */
+.back-wheel { left: 45px; }
+.front-wheel { right: 45px; }
+
+/* රෝද අංශක 360ක් කරකැවෙන ආකාරය */
+@keyframes wheel-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* කාර් එක මඳක් ගැස්සෙන ආකාරය (Realism සඳහා) */
+.car-body {
+    width: 100%;
+    animation: car-shake 0.2s linear infinite;
+}
+
+@keyframes car-shake {
+    0% { transform: translateY(-1px); }
+    50% { transform: translateY(1px); }
+    100% { transform: translateY(-1px); }
+}
