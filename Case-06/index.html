@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Animation</title>
+    <title>Case 06</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="sky">
-        <div class="city"></div>
-        
-        <div class="road"></div>
-        
-        <div class="car-container">
-            <img src="Car_Animation_Img.zip/car.png" class="car-body">
-            
-            <div class="wheels">
-                <img src="Car_Animation_Img.zip/wheel.png" class="wheel back-wheel">
-                <img src="Car_Animation_Img.zip/wheel.png" class="wheel front-wheel">
+    <div class="city-view-container">
+        <img src="Assets/sky.jpg" alt="sky">
+        <div class="city-view">
+           <div class="city-frame" id="frame-01">
+            <img src="./Assets/city.png" alt="city">
+            <img src="./Assets/road.jpg" alt="road">
+           </div>
+           <div class="city-frame" id="frame-02">
+            <img src="./Assets/city.png" alt="city">
+            <img src="./Assets/road.jpg" alt="road">
+           </div>
+           <div class="city-frame" id="frame-03">
+            <img src="./Assets/city.png" alt="city">
+            <img src="./Assets/road.jpg" alt="road">
+           </div>
+        </div>
+        <div class="car">
+            <img src="./Assets/car.png" alt="car">
+            <div class="wheel">
+                <img src="./Assets/wheel.png" alt="wheel-1">
+                <img src="./Assets/wheel.png" alt="wheel-2">
             </div>
         </div>
     </div>
